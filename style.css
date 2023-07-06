@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 
+
 .bg-image {
     width: 100%;
     height: auto;
@@ -34,6 +35,10 @@ body {
     color: aliceblue;
 }
 
+section{
+  margin: 0;
+}
+
 section h1 {
     font-size: 40px;
 }
@@ -42,6 +47,10 @@ section p {
     font-size: 20px;
     text-align: center;
     margin-top: 2%;
+}
+section img{
+  border-radius: 50%;
+  height: 30%;
 }
 
 .servicii {
@@ -53,6 +62,7 @@ section p {
 .column {
     float: left;
     width: 33.33%;
+    border-radius: 50%;
 }
 
 
@@ -124,4 +134,14 @@ section p {
     text-align: center;
     font-size: 13px;
     color: #aaa;
+  }
+
+  /* media */
+  @media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    .column {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 50%;
+    }
   }
